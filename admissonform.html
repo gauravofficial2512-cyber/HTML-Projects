@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admisson form</title>
+</head>
+<body>
+    <header>
+        <h1 style = "text-align: center; "><b>Rawal Institue of Technology and Management</b></h1>
+        <h2 style = "text-align: center; "> <b>Registration Form</b></h2>
+        <img src = "rawalinstitution.png" alt = "institue symbol" height = "100px" width ="100px" 
+        style="position:absolute; top:0; right:0;">
+    
+    </header>
+    <main>
+        <form action = "\college server">
+            <fieldset>
+                <legend><b>Personal Information</b></legend>
+                <div>
+                    <ol>
+                        <li>
+                            <label for = "fname"> Enter you Full Name: </label>
+                            <input type = "text" id = "fname" name ="Fullname" placeholder="fullname">
+                        </li>
+                        <br>
+                        <li>
+                            <label for = "faname">Enter your Father name:</label>
+                            <input type = "text" id = "faname" name = "Father name" placeholder="father name">
+                        </li>
+                        <br>
+                        <li>
+                            <label for = "mname">Enter your Mother name</label>
+                            <input type = "text" name = "mother name" placeholder="Mother name">
+                        </li>
+                        <br>
+                        <li>
+                            <label for = "date">Enter your Date Of Birth</label>
+                            <input type = "date"  id = "date" name = "DOB">
+                        </li>
+                        <br>
+                        <li>
+                            Enter Your Gender
+                            <ol type = "a">
+                                <li>
+                                    <input type = "radio" name = "gender" id = "m">
+                                    <label for = "m">Male</label>
+                                    
+                                </li>
+                                
+                                <li>
+                                    <input  type = "radio" id = "f" name = "gender"> 
+                                    <label for = "f">Female</label>
+                                    
+                                </li>
+                                <li>
+                                    <input type = "radio" id = "ot" name = "gender">
+                                    <label for = "ot">Others</label>
+                                </li>
+                            </ol>
+                        </li>
+                        <br>
+                        <li>
+                            <label for = "category">Select Your Category</label>
+                            <select name= "category" id = "category">
+                                <option value = "General" selected>General</option>
+                                <option value = "OBC">Other BackWard Class</option>
+                                <option value = "SC">Shecduled Caste</option>
+                                <option value = "ST">Scheduled Tribe</option>
+                            </select>
+
+                        </li>
+                        <br>
+                        <li>
+                            <label for = "n">Enter Your Nationality</label>
+                            <input type = "text" name = "nationality" id = "n" placeholder = "nationality">
+                        </li>
+                        
+
+                    </ol>
+
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend><b>Contact Details</b></legend>
+                <ol>
+                    <li>
+                        <label for = "e">Enter your Email address:</label>
+                        <input type = "email" name = "email" id = "e" placeholder="email">
+                    </li>
+                    <br>
+                    <li>
+                        <label for = "m">Enter Your Modible Number</label>
+                        <input type = "tel" id = "m" name = "phno" placeholder="9999999999">
+                    </li>
+                    <br>
+                    <li>
+                        <label for = "alt">Alternate Mobile Number</label>
+                        <input type = "tel" id ="alt" name = "alternate num " placeholder="999999999">
+                    </li>
+                    <br>
+                    <li>
+                        <label for = "add">Enter Your Address</label>
+                        <input type = "text" id = "add" name = "address" placeholder = "Address">
+                    </li>
+                    <br>
+                    <li>
+                        <label for = "city">Enter your City</label>
+                        <input type = "text" id = "city" name = "city" placeholder = "city">
+                    </li>
+                    <br>
+                    <li>
+                        <label for = "pcode">Enter your Pincode</label>
+                        <input type = "text" id = "pcode" name = "pincode" placeholder="121004">
+                    </li>
+                </ol>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend><b>Academic Information</b></legend>
+                <ol>
+                    <li>
+                        <label for = "10" >10th Board</label>
+                        <input type = "text" id = "10" name = "board" placeholder = "enter board">
+                    </li>
+                    <br>
+                    <li>
+                        <label for = "p">Enter 10th Percentage</label>
+                        <input type = "text" id = "p" name = "10thpercentage" placeholde = "percentage">
+                    </li>
+                    <br>
+                    <li>
+                        <label for = "12" >12th Board</label>
+                        <input type = "text" id = "12" name = "board" placeholder = "enter board">
+                    </li>
+                    <br>
+                    <li>
+                        <label for = "p12">Enter 12th Percentage</label>
+                        <input type = "text" id = "p12" name = "12thpercentage" placeholde = "percentage">
+                    </li>
+                    <br>
+                    <li>
+                        <label for = "s">Enter Stream</label>
+                        <select name = "Stream" id = "s">
+                            <option value = "sci">Science</option>
+                            <option value = "art">Arts</option>
+                            <option value = "com">Commerce</option>
+                        </select>
+                    </li>
+                </ol>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend><b>Course Selection</b></legend>
+                <ol>
+                    <li>
+                        <label for = "dept">Select Your Department</label>
+                        <select id = "dept" name = "department">
+                            <option value = "CSE">Computer Science</option>
+                            <option value = "it">Information Technology</option>
+                            <option value = "ece">Electronics and communication</option>
+                            <option value = "mech">Mechanical</option>
+                            <option value = "et">Electrical</option>
+                            <option value = "ci">Civil</option>
+                            <option value = "m">Management</option>
+                        </select>
+                    </li>
+                    <br>
+                    <li>
+                        <label for = "course">Enter Your Course</label>
+                        <select id = "course" name = "course">
+                            <option value = "btech">Bachelor Of Technology (B.Tech)</option>
+                            <option value = "mngt">Bachelor Of Management (BBA)</option>
+                            <option value = "pbtech">Masters of Technology(M.Tech)</option>
+                            <option value = "pmgnt">Master of Management (MBA)</option>
+                        </select>
+                    </li>
+                </ol>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legand><b >Student Documents</b></legand>
+                <ol>
+                    <li>
+                        <label for = "photo">Upload Your Photo</label>
+                        <input type = "file" name = "image" id = "photo">
+                    </li>
+                    <br>
+                    <li>
+                        <label for = "10msheet">Upload 10th marksheet</label>
+                        <input type = "file" id = "10msheet" name = "10thmarksheet">
+                        
+                    </li>
+                    <br>
+                    <li>
+                        <label for = "12msheet">Upload 12th Marksheet</label>
+                        <input type = "file" id = "12msheet" name = "12thmarksheet">
+                    </li>
+                    <br>
+                    <li>
+                        <label for = "tproof">Upload Your Adhaar</label>
+                        <input type = "file" id = "tproof" name = "adhaar card">
+                    </li>
+
+                </ol>
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend><b>Additional Information</b></legend>
+                <ol>
+                    <li>
+                        Hostel Required:
+                        <ol type = "a">
+                            <li>
+                                <label for = "y">YES</label>
+                                <input type = "radio" id = "y" name = "hostel">
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "n">NO</label>
+                                <input type = "radio" id = "n" name = "hostel">
+                            </li>
+                        </ol>
+
+                    </li>
+                    <br>
+                    <li>
+                        Transport Required:
+                        <ol type = "a">
+                            <li>
+                                <label for = "Y">YES</label>
+                                <input type = "radio" name = "trans" id = "Y">
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "N">NO</label>
+                                <input type = "radio" name = "trans" id = "N">
+                            </li>
+                        </ol>
+                    </li>
+                    <br>
+                    <li>
+                        Hobbies
+                        <ol type = "a">
+                            <li>
+                                <label for = "read">Reading</label>
+                                <input type = "checkbox" name = "Hobbies" id = "read">
+                                
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "code">Coding</label>
+                                <input type = "checkbox" name = "hobbies" id = "code">
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "trav">Travelling</label>
+                                <input type = "checkbox" name = "hobbies" id = "trav">
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "game">Gamming</label>
+                                <input type = "checkbox" id = "game" name = "hobbies">
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "photo">PhotoGraphy</label>
+                                <input type = "checkbox" id = "photo" name = "hobbies">
+                            </li>
+                            <br>
+                            <li>
+                                <label for ="dance">Dancing</label>
+                                <input type = "checkbox" id = "dance" name = "hobbies">
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "sing">Singing</label>
+                                <input type = "checkbox" id = "sing" name = "hobbies">
+                            </li>
+                        </ol>
+                    </li>
+                    <br>
+                    <li>
+                        <label for = "desire">Why Do you Want To take this College</label>
+                        <br>
+                        <textarea id = "desire" name = "desicion" rows = "5" cols = "50"></textarea>
+
+                    </li>
+                </ol>
+
+            </fieldset>
+            <hr>
+            <fieldset>
+                <legend><b>Declaration</b></legend>
+                <label for = "decl">
+                    I hereby declare that the information provided above
+                     is true and correct to the best of my knowledge.
+                </label>
+                <input type = "checkbox" id ="decl" name = "declaration">
+            </fieldset>
+            <hr>
+            <button type = "reset">Click me to reset changes</button>
+            <br>
+            <br>
+            <button type = "submit">Click me to submit the form</button>
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <fieldset>
+            <legend><b>Contact US</b></legend>
+        
+            <ol type = "A">
+                <li>&#128205; Address : Sohna Rd, Block E, Sanjay Colony, 
+                                        New Industrial Township, Faridabad, Haryana 121005 
+                </li>
+                <li>&#9990; Phone number : 9711041832</li>
+                <li>&#9993; Email:rawalinsitute1211@gmail.com</li>
+            </ol>
+            <p><b>For more info visit our website : <a href ="https://riom.in/" >RawalInstitutes</a></b></p>
+        </fieldset>
+         <p> &copy; 2026 Rawal Institue of technology and Management. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
