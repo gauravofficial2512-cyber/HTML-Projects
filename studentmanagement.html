@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+</head>
+<body>
+    <header>
+        <h1 style = "text-align: center; "><b>Amity University of Technology , Greater Noida</b></h1>
+        <h2 style = "text-align: center; "><b>Student Management System</b></h2>
+        <img src = "amity.png" alt = "amity logo" heigth = "100px" width = "100px" style="position:absolute; top:0; right:0;">
+      
+        <hr>
+        <nav>
+            <h2><b>To Know More About it Please click on the following Section button &dArr;</b></h2>
+            <ol type ="A">
+                <li> <a href = "#home">Home Section</a></li>
+                <li><a href = "#registration">Resgistration Section</a></li>
+                <li><a href = "#records">Student Records Section</a></li>
+                <li><a href = "#timetable">Time Table</a></li>
+                <li><a href = "#notices">Notices Section</a></li>
+                <li><a href = "#contact">Contact Section</a></li>
+                <li><a href = "#gallery">College Gallery</a></li>
+                <li><a href = "#mul">Multimedia Section</a></li>
+                
+            </ol>
+        </nav>
+
+    </header>
+    <hr>
+    <main>
+            <section id = "home">
+                <p style = "color:orange">
+                    <b>
+                        Welcome to the Student Management System.This platform is designed 
+                        to help students and administrators manage academic information efficiently.
+                        Here you can register students, view student records, access class timetables, 
+                        check important notices, and explore college resources.
+                        We are committed to providing a smooth and organized academic experience for all students. 
+                    </b>
+                </p>
+                <br>
+                <div align  = "center">
+                    <img src = "amity univ.png" alt = "amity univ image" width = "250" height = "200">
+                </div>
+            </section>
+            <hr>
+            <section id = "registration">
+                <h2><b>Student Registration Form</b></h2>
+                <p style = "color : red"><b>Please Fill the form to complete Your Registration at University*</b></p>
+                <form action = "\college server">
+                    <fieldset>
+                        <legend><b>Personal Details</b></legend>
+                        <ol>
+                            <li>
+                                <label for = "fname">Full Name Of Student : </label>
+                                <input type = "text" id = "fname" name = "full name">
+                            </li>
+                            <br>
+                            <li>
+                                <label for ="rnum">Enter Student Roll Number :  </label>
+                                <input type = "text" name = "roll number" id = "rnum">
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "dob">DATE OF BIRTH :</label>
+                                <input type = "date" id = "dob" name = "DOB">
+                            </li>
+                            <br>
+                            
+                            <li>
+                                Enter Gender of Student:
+                                <ul>
+                                    <li>
+                                        <label for = "f">Female</label>
+                                        <input type = "radio" name = "gender" id = "f" >
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <label for ="m">Male</label>
+                                        <input type = "radio" name = "gender" id = "m">
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <label for ="o">Other not to say</label>
+                                        <input type = "radio" id = "o" name = "gender" >
+                                    </li>
+                                </ul>
+                                        
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "email">Enter Student Mail Id:</label>
+                                <input type = "email" id ="email" name = "email" >
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "mob">Enter Mobile number</label>
+                                <input type = "text" id = "mob" name = "mobile num" >
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "add">Enter Address :</label>
+                                <input type = "text" id = "add" name = "address">
+                            </li>
+                        </ol>
+                    </fieldset>
+                    <hr>
+                    <fieldset>
+                        <legend><b>Academic Details</b></legend>
+                        <ol>
+                            <li>
+                                <label for = "cor">Choose Your Course</label>
+                                <select id = "cor" name = "Course">
+                                    <option value = "Btech">Bachelor Of Technology</option>
+                                    <option value = "Mtech">Masters Of Technology</option>
+                                    <option value = "BCA">Bachelor Of Computer Application</option>
+                                    <option value = "MCA">Master Of Computer Application</option>
+                                    <option value = "BBA">Bachelor Of Buisness Administration</option>
+                                    <option value = "MBA">Master Of Buisness Administration</option>
+                                    <option value = "Bcom">Bachelor of Commerce</option>
+                                    <option value = "MCOM">Masters Of commerce</option>
+                                    <option value  = "BED">Bachelor Of Education</option>
+                                    <option value = "MED">Master Of Education</option>
+                                    <option value = "BSC">Bachelor Of Basic Science</option>
+                                    <option value = "MSC">Masters Of Basic Science</option>
+                                    <option value = "BPHIL">Bachelor Of Philosphy</option>
+                                    <option value = "MPHIL">Masters Of Philosphy</option>
+                                    <option value = "LLB">Bachelor Of Law</option>
+                                    <otpion value = "LLM">Masters Of Law</otpion>
+
+                                </select>
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "dept">Choose your Department</label>
+                                <select id = "dept" name = "Department">
+                                    <option value = "CSE">Computer Science Department</option>
+                                    <option value = "ME">Mechanical Engineering Department</option>
+                                    <option value = "EE">Electrical Engineering Department</option>
+                                    <option value = "ECE">Electronics Engineering Department</option>
+                                    <option value = "CIVIL">Civil Engineering Department</option>
+                                    <option value = "MNGMT">Department of Management</option>
+                                    <option value = "Education">Department Of Education</option>
+                                    <option value = "chem">Department Of Chemestry</option>
+                                    <option value = "math">Department Of Mathematics</option>
+                                    <option value = "phy">Depatment Of Physics</option>
+                                    <option value = "phil">Department Of Philosphy</option>
+                                    <option value = "law">Department Of Law</option>
+                                </select>
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "y">Choose Your Year</label>
+                                <select id = "y" name = "year">
+                                    <option value = "1">First</option>
+                                    <option value = "2">Second</option>
+                                    <option value = "3">Third</option>
+                                    <option value = "4">Fourth</option>
+                                    <option value = "5">Fifth</option>
+                                </select>
+                                
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "s">Choose your Semester</label>
+                                <select id = "s" name = "semester">
+                                    <option value = "1">First</option>
+                                    <option value = "2">Second</option>
+                                    <option value = "3">Third</option>
+                                    <option value = "4">Fourth</option>
+                                    <option value = "5">Fifth</option>
+                                    <option value = "6">Sixth</option>
+                                    <option value = "7">Seventh</option>
+                                    <option value = "8">Eigth</option>
+                                    <option value = "9">Ninth</option>
+                                    <option value = "10">Tenth</option>
+                                </select>
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "prt">10th Percentage</label>
+                                <input type = "text" id="prt" name="percentage">
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "12prt">12th Percentage</label>
+                                <input type = "text" id = "12prt" name = "12th percentage">
+                            </li>
+                        </ol>
+                    </fieldset>
+                    <hr>
+                    <fieldset>
+                        <legend><b>Hobbies</b></legend>
+                        <ol>
+                            <li>
+                                <label for = "cod">Coding</label>
+                                <input type = "checkbox" name="hobbies" id = "cod">
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "read">Reading</label>
+                                <input type = "checkbox" name = "hobbies" id = "read">
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "spo">Sports</label>
+                                <input type = "checkbox" name = "hobbies" id = "spo">
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "mus">Music</label>
+                                <input type = "checkbox" id = "mus" name = "hobbies">
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "game">Gamming</label>
+                                <input type = "checkbox" id = "game" name = "hobbies">
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "trav">Travelling</label>
+                                <input type="checkbox" name="hobbies" id="trav">
+                            </li>
+                        </ol>
+                    </fieldset>
+                    <fieldset>
+                        <legend><b>Document Upload</b></legend>
+                        <ol>
+                            <li>
+                                <label for = "img">Upload Photo</label>
+                                <input type="file" id = "img" name = "image">
+                            </li>
+                            <br>
+                            <li>
+                                <label for = "10m">10th Marksheet</label>
+                                <input type = "file" name = "10th marksheet" id = "10m">
+                            </li>
+                            <br>
+                            <li>
+                                <label for ="12m">12th Marksheet</label>
+                                <input type = "file" name = "12th marksheet" id = "12m">
+                            </li>
+                            <br>
+                            <li>
+                                <label for="idp">ID proof/Adhaar Card/PAN Card</label>
+                                <input type = "file" name = "id proof" id = "idp">
+
+                            </li>
+                        </ol>
+                    </fieldset>
+                    <hr>
+                    <fieldset>
+                        <legend><b>Additional In formantion</b></legend>
+                        <label for="addi"><b>Why do you want to join this college ?</b></label>
+                        <br>
+                        <br>
+                        <textarea id = "addi" name = "answer" rows= "10" cols="70"></textarea>
+                    </fieldset>
+                    <hr>
+                    <fieldset>
+                        <legend><b>Declaration</b></legend>
+                        <label for = "decl">I hereby declare that the information provided above is true and correct.</label>
+                        <input type = "checkbox" id ="decl" name = "declaration">
+                    </fieldset>
+                    <hr>
+                    <button  style = "color:red"type = "reset">Reset All Changes</button>
+                    <br>
+                    <button style = "color:green" type = "submit">Click to submit and proceed</button>
+                </form>
+            </section>
+            <hr>
+            <section id = "records">
+                <h2><b>Students Records Section</b></h2>
+                <table border = "1">
+                    <caption><b>Records table</b></caption>
+                    <thead>
+                        <tr>
+                            <th>Roll Number</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Semester</th>
+                            <th>CGPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2415000593</td>
+                            <td>Gaurav</td>
+                            <td>CSE</td>
+                            <td>Fifth</td>
+                            <td>7.99</td>
+                        </tr>
+                        <tr>
+                            <td>2415000833</td>
+                            <td>Krishna Agarwal</td>
+                            <td>CSE</td>
+                            <td>Fifth</td>
+                            <td>8.42</td>
+                        </tr>
+                        <tr>
+                            <td>2315000676</td>
+                            <td>Gautam Gaur</td>
+                            <td>Mechanical</td>
+                            <td>Eigth</td>
+                            <td>8.99</td>
+                        </tr>
+                        <tr>
+                            <td>2515000543</td>
+                            <td>Garv Gupta</td>
+                            <td>Electronics</td>
+                            <td>Second</td>
+                            <td>9.33</td>
+                        </tr>
+                        <tr>
+                            <td>241500838</td>
+                            <td>Krishna Gupta</td>
+                            <td>CSE</td>
+                            <td>Fourth</td>
+                            <td>8.76</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section id = "timetable">
+                <h2><b>Time Table Section</b></h2>
+                <table border="1">
+                    <caption>Class Time Table</caption>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8 am > 9am</td>
+                            <td></td>
+                            <td>Class 1</td>
+                            <td>Class 1</td>
+                            <td>LAB 1</td>
+                            <td></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>9 am > 10 am</td>
+                            <td>Class 1</td>
+                            <td></td>
+                            <td></td>
+                            <td>LAB 1</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>10 am > 11 am</td>
+                            <td>Class 2</td>
+                            <td>Class 2</td>
+                            <td>LAB 1</td>
+                            <td>Class 1</td>
+                            <td>Class 1</td>
+                        </tr>
+                        <tr>
+                            <td>11 am > 12 noon</td>
+                            <td>Class 3</td>
+                            <td>Class 3</td>
+                            <td>LAB 1</td>
+                            <td>Class 2</td>
+                            <td>Class 2</td>
+                        </tr>
+                        <tr>
+                            <td>12 noon > 1pm</td>
+                            <td>LAB 1</td>
+                            <td>Class 4</td>
+                            <td>Lunch</td>
+                            <td>Class 3</td>
+                            <td>Class 3</td>
+                        </tr>
+                        <tr>
+                            <td>1 pm > 2pm</td>
+                            <td>LAB 1</td>
+                            <td>Lunch</td>
+                            <td>Class 2</td>
+                            <td>Lunch</td>
+                            <td>Lunch</td>
+                        </tr>
+                        <tr>
+                            <td>2 pm > 3pm</td>
+                            <td>Lunch</td>
+                            <td>Class 5</td>
+                            <td>Class 3</td>
+                            <td>Lab 2</td>
+                            <td>Lab 1</td>
+                        </tr>
+                        <tr>
+                            <td>3 pm > 4pm</td>
+                            <td>Class 4</td>
+                            <td></td>
+                            <td>Class 4</td>
+                            <td>Lab 2</td>
+                            <td>Lab 1</td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+            </section>
+            <hr>
+            <section id = "notices">
+                <h2 style = "color:red"><b>Important Notices*</b></h2>
+                <ol type = "A">
+                    <li>
+                        <h3><strong>Admission Notice</strong></h3>
+                        <p>
+                            <b>
+                                Admissions for the 2026-27 academic session are now open.<br>
+                                Last date to apply: 31 July 2026.
+                            </b>
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <h3><strong>Exam Notice</strong></h3>
+                        <p>
+                            <b>
+                                Mid-Semester Examinations will begin from 15 September 2026.<br>
+                                Students are advised to check the timetable regularly.
+                            </b>
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <h3><strong>Holiday Notice</strong></h3>
+                        <p>
+                            <b>
+                                The college will remain closed on 15 August 2026<br>
+                                on account of Independence Day.
+                            </b>
+                        </p>
+                    </li>
+                    <br>
+                    <li>
+                        <h3><strong>Placement Drive Notice</strong></h3>
+                        <p>
+                            <b>
+                                A campus placement drive will be conducted on<br>
+                                20 August 2026 for final-year students.
+                            </b>
+                        </p>
+                    </li>
+                </ol>
+            </section>
+            <hr>
+            <section id = "gallery">
+                <h2><b>College Gallery</b></h2>
+                <div>
+                    <h3><b>Campus Images</b></h3>
+                    
+                    <img src="campus1.png" alt="Image 1" width="400" height="300">
+                    <img src="campus2.png" alt="Image 2" width="400" height ="300">
+                    <img src="campus3.png" alt="Image 3" width="400" height  = "300">
+                </div>
+                <div>
+                    <h3><b>Library Images</b></h3>
+                    <img src="library1.png" alt="Image 1" width="400" height="300">
+                    <img src="library2.png" alt="Image 2" width="400" height ="300">
+                    <img src="library3.png" alt="Image 3" width="400" height  = "300">
+                </div>
+                <div>
+                    <h3><b>Hostel Images</b></h3>
+                    <img src="hostel1.png" alt="Image 1" width="400" height="300">
+                    <img src="hostel2.png" alt="Image 2" width="400" height ="300">
+                    <img src="hostel3.png" alt="Image 3" width="400" height  = "300">
+                </div>
+                <div>
+                    <h3><b>Interior Images</b></h3>
+                    <img src="interior1.png" alt="Image 1" width="400" height="300">
+                    <img src="interior2.png" alt="Image 2" width="400" height ="300">
+                    <img src="interior3.png" alt="Image 3" width="400" height  = "300">
+                </div>
+                <div>
+                    <h3><b>Cafeteria and food Court</b></h3>
+                    <img src="food1.png" alt="Image 1" width="400" height="300">
+                    <img src="food2.png" alt="Image 2" width="400" height ="300">
+                    <img src="food3.png" alt="Image 3" width="400" height  = "300">
+                </div>
+            </section>
+            <hr>
+            <section id = "mul">
+                    <h2><b>Multimedia Section</b></h2>
+                    <ol type = "A">
+                        <li><h4><b>College Anthem</b></h4>
+                            
+                            <audio controls>
+                                <source src = "anthem.mp3" type="audio/mpeg">
+                            </audio>
+                        </li>
+                        <br>
+                        <li>
+                            <h4><b>College Virtual tour</b></h4>
+                            <video width="500" controls >
+                                <source src = "collegetour.mp4" type="video/mp4">
+                            </video>
+                        </li>
+                    </ol>
+            </section>
+            <hr>
+            <section id="contact">
+                <h2><b>Contact Information</b></h2>
+                <ol type ="i">
+                    <li>
+                        <p> &#9993;Emial : amityunivnoida123@gmail.com</p>
+                    </li>
+                    <br>
+                    <li>
+                        <p>&#9990;Phone Number : 97234569</p>
+                    </li>
+                    <br>
+                    <li>
+                        <address>&#128205;Sector 125, Noida, Uttar Pradesh 201303</address>
+                    </li>
+                </ol>
+            </section>
+            <hr>
+            <footer>
+                <ol type="I">
+                    <li><a href="https://noida.amity.edu/">College main website</a></li>
+                    <li>Telephone : 7896-6789</li>
+                    
+                </ol>
+                <p>&copy; 2026 Amity University ,Noida. All Rights Reserved</p>
+            </footer>
+    </main>
+    
+</body>
+</html>
